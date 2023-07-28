@@ -6,3 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+axum = "0.6.19"
+dotenv = "0.15.0"
+serde = { version = "1.0.177", features = ["derive"] }
+tokio = { version = "1.29.1", features = ["full"] }
+sqlx = { version = "0.7.1", features = ["runtime-tokio", "sqlite"] }
+axum-error = "0.2.0"
+tower-http = { version = "0.4.3", features = ["cors"] }
